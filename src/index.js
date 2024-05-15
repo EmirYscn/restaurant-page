@@ -3,12 +3,13 @@ import {
   menuPageLoad,
   contactPageLoad,
 } from "./initial-page-load";
+import "./styles.css";
 
 homePageLoad();
 
-const homeBtn = document.querySelector(".home");
-const menuBtn = document.querySelector(".menu");
-const contactBtn = document.querySelector(".contact");
+const homeBtn = document.querySelector(".home-btn");
+const menuBtn = document.querySelector(".menu-btn");
+const contactBtn = document.querySelector(".contact-btn");
 
 homeBtn.addEventListener("click", homePageLoad);
 menuBtn.addEventListener("click", menuPageLoad);

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/noodles-with-vegetables-with-frame.jpg);
+  background-size: 100%;
+}
+header {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(24, 48, 71, 50%);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.head {
+  padding: 1em;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+.headline p {
+  width: 30%;
+  display: inline;
+}
+.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-size: 1.2em;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  gap: 3px;
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-size: 1.2em;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  gap: 1em;
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-size: 1.2em;
+}
+.beverages-container,
+.sides-container,
+.main-dishes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.beverages-content,
+.sides-content,
+.main-dishes-content,
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 80%;
+}
+
+.beverage,
+.side,
+.main-dish,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.contact {
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-size: 1.2em;
+}

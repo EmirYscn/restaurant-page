@@ -10,6 +10,7 @@ function homePageLoad() {
   const title = document.createElement("h1");
   title.textContent = "Beary's Breakfast Bar";
   headDiv.appendChild(title);
+  headDiv.classList.add("head");
 
   // Headline Div
   const headlineDiv = document.createElement("div");
@@ -87,7 +88,7 @@ function menuPageLoad() {
   // Menu content
 
   const menuContent = document.createElement("div");
-  menuContent.classList.add("menu");
+  menuContent.classList.add("menu-container");
   contentDiv.appendChild(menuContent);
 
   //Beverages Div
@@ -114,13 +115,13 @@ function menuPageLoad() {
     "A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!",
     2
   );
-  generateMenuContent(
-    beveragesContent,
-    "beverage",
-    "Beary Tea",
-    "A comforting, almost filling, tea that is infused with the flowers of several kinds of berries. Best served cold, but can be served hot on request",
-    3
-  );
+  // generateMenuContent(
+  //   beveragesContent,
+  //   "beverage",
+  //   "Beary Tea",
+  //   "A comforting, almost filling, tea that is infused with the flowers of several kinds of berries. Best served cold, but can be served hot on request",
+  //   3
+  // );
 
   // Sides Div
   const sidesDiv = document.createElement("div");
@@ -146,13 +147,13 @@ function menuPageLoad() {
     "A slice of toast, your choice of bread, and our homemade blackberry jam",
     1
   );
-  generateMenuContent(
-    sidesContent,
-    "side",
-    "Fresh Fruit",
-    "A small bowl of fresh fruit, whatever we find at the market for the day",
-    3
-  );
+  // generateMenuContent(
+  //   sidesContent,
+  //   "side",
+  //   "Fresh Fruit",
+  //   "A small bowl of fresh fruit, whatever we find at the market for the day",
+  //   3
+  // );
 
   // Main Dishes div
   const mainDishesDiv = document.createElement("div");
@@ -176,13 +177,13 @@ function menuPageLoad() {
     "A stack of homemade buttermilk pancakes, served with our locally sourced maple syrup",
     "5"
   );
-  generateMenuContent(
-    mainDishesContent,
-    "main-dish",
-    "French Toast",
-    "Two slices of the best french toast you will ever eat, served with our locally sourced maple syrup",
-    5
-  );
+  // generateMenuContent(
+  //   mainDishesContent,
+  //   "main-dish",
+  //   "French Toast",
+  //   "Two slices of the best french toast you will ever eat, served with our locally sourced maple syrup",
+  //   5
+  // );
 }
 
 function contactPageLoad() {
